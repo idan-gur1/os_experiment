@@ -54,12 +54,16 @@ main:
     mov si, msg
     call print_string
 
+    mov si, msg_2
+    call print_string
+
     hlt
 
 jmp $
 
 
 msg: db 'Hello there', END_OF_LINE, 0
+msg_2: db 'Hello World', END_OF_LINE, 0
 
 
 times 510-($-$$) db 0
