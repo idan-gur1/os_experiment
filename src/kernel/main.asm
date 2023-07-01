@@ -59,7 +59,8 @@ main:
 
     hlt
 
-jmp $
+.halt:
+    jmp $
 
 
 msg: db 'Hello there', END_OF_LINE, 0
